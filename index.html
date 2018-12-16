@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Projects</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -8,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -21,25 +26,29 @@
     </p>
     </div>
     <nav>
-        <a href = "index.html" class="nav-item" id="APP">APP</a>
-        <a href = "Internship.html" class="nav-item" id="Internship">Internship </a>
-        <a href = "Course.html" class="nav-item" id="Course">Course</a>
+        <a href = "index.html" class="nav-item nav-active" id="APP">APP</a>
+        <a href = "Tech.html" class="nav-item" id="Tech">Tech </a>
+        <a href = "Travel.html" class="nav-item" id="Travel">Travel</a>
         <a href = "Contact.html" class="nav-item" id="Contact">Contact</a>
     </nav>
 
 </header>
 
-<main>
-  <div class="hello">
-    <p>Hello! Welcome to Jianzhong's App Stores</p>
-  </div>
+<main id="main">
+  
   <section>
+    <div class="hello">
+    <h2>Hello! Welcome to Jianzhong's App Stores</h2>
+    </div>
     <div class="projects">
         <div class="project-items">
           <a class="open-project" href="http://35.153.74.194/Jupiter/">
             <div class="project-overlay">
-              <h4>Ticket+ </h4>               
-              <p>Event Search and Ticket Recommendation</p>
+              <p>Ticket+: Java Web Service Development – Event Search and Ticket Recommendation</p>               
+              <p>Developed an interactive web page for users to search events and purchase tickets (HTML, CSS and JavaScript)
+              Improved personalized business recommendation based on search history and favorite records
+              </p>
+
             </div>
           </a>
           <!-- <img src="images/EventSearch.jpg" alt="" class="projects-images"> -->
@@ -48,49 +57,84 @@
         </div>
 
         <div class="project-items">
-          <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
+          <a class="open-project" href="https://github.com/chengjz/NearbyPlacesApp">
             <div class="project-overlay">
-              <h4>Tinnews </h4>               
-              <p>A Tinder-like News App</p>
+              <p>Nearby Places App</p>               
+              <p>A Places Recommandation app Based on Python and ploty map</p>
+              <p>This program have two endpoint, search your nearby events and search the events with input address, and The program will display the current user’s nearby restaurants by using HTML tables within a Flask App:
+    
+              Firstly, this program get the user’s IP address from Ipinfo API, and use Ipstack API to get the user’s geolocation.
+
+              Then, This program will display the average ratings for different restaurant types (e.g., bar, breakfast, Indian,     Mediterranean) from Google, Yelp.
+
+              After gaining the nearby events data, this program uses HTML links/form elements to prompt for the user to choose data/visualization options.</p>
             </div>
           </a>
+          <img src="images/nearbyplaces.jpg" alt="Around" class="projects-images">
+        </div>
+
+        <div class="project-items">
+          <!-- <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html"> -->
+            <div class="project-overlay">
+              <p>Tinnews: A Tinder-like News App </p>               
+              <p>Designed the Tinder Flavor News app based on MVP architectural pattern
+
+              • Implemented ViewPager with BottomBar that holds News/Save/Setting Tabs’ state in the
+              MainActivity concurrently
+
+              • Utilized Mindorks’s PlaceHolderView to support swipe gestures for liking/disliking the news
+
+              • Integrated Retrofit, Rxjava and Picasso to present the latest news data from a RESTFUL
+              endpoint (newsapi.org)</p>
+            </div>
+          
           <img src="images/Tinnews-image.jpg" alt="Tinnews" class="projects-images">
         </div>
 
         <div class="project-items">
-          <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
+          <!-- <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html"> -->
             <div class="project-overlay">
-              <h4>Hermes</h4>             
-              <p>Online shopping systems </p>
-              <p> based on The Spring and Hibernate</p>
+              <p>Hermes: Online shopping systems based on The Spring and Hibernate</p>         
+              <p>• Built a web application based on Spring MVC to support item search and listing (dependency injection, inversion of control, REST API etc.).
+              • Used Spring Security to implement OAuth2 based authentication
+              • Utilized Hibernate to provide better support of database operations
+              • Developed a Spring Web Flow to support item ordering.</p>
             </div>
-          </a>
+          
           <img src="images/onlineShopping.jpg" alt="Hermes" class="projects-images">
         </div>
 
 
         <div class="project-items">
-          <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
+          <!-- <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html"> -->
             <div class="project-overlay">
-              <h4>Around</h4>               
-              <p>A Cloud and React based Social Network</p>
+              <p>Around: A Cloud and React based Social Network</p>               
+              <p>Built a geo-based social network web application with React JS.
+
+              • Implemented basic token based registration/login/logout flow with React Router v4 and server-side user authentication with JWT.
+
+              • Implemented features such as "Create Post", "Nearby Posts As Gallery" and "Nearby Posts In Map" with Ant Design, GeoLocation API and Google Map API.</p>
             </div>
-          </a>
+          
           <img src="images/around.jpg" alt="Around" class="projects-images">
         </div>
+
     </div>
   </section>
 </main>
 <footer>
     <div class="footer">
-        <h4>
+        <p>
         Interested in working together?
-        </h4>           
+        </p>           
         <i class="far fa-envelope fa-2x"></i> 
         <p>
            jzcheng@umich.com
       </p>
     </div>
+    <a class="skip-main" href="#main">Skip to main content</a>
 </footer>
+
+
 </body>
 </html>

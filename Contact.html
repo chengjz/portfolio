@@ -2,11 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    /*    YOUR CSS CODE HERE */ 
+    .contact-container {
+      display: none;
+    }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("#subscribe").click(function(){
+            $(".contact-container").toggle("slow", function(){
+            }); 
+        });
+    });
+    </script>
 </head>
 <body>
 
@@ -23,65 +42,69 @@
     </div>
     <nav>
         <a href = "index.html" class="nav-item" id="APP">APP</a>
-        <a href = "Internship.html" class="nav-item" id="Internship">Internship </a>
-        <a href = "Course.html" class="nav-item" id="Course">Course</a>
-        <a href = "Contact.html" class="nav-item" id="Contact">Contact</a>
+        <a href = "Tech.html" class="nav-item" id="Tech">Tech </a>
+        <a href = "Travel.html" class="nav-item" id="Travel">Travel</a>
+        <a href = "Contact.html" class="nav-item nav-active" id="Contact">Contact</a>
     </nav>
 
 </header>
 
-<main>
-<img src="images/profile.jpg" alt = ""/>
+<main id="main">
+<div class="self-controller">
+  <div class = "skiing-font">
+    <i class="fas fa-skiing fa-5x"></i>
+  </div>
+<div class="self-describtion">
+<p>I'm a Software developer from China who currently resides in a beautiful town -- Ann Arbor, Michigan. In 2019, I'll graduate with a MS in Intelligent Systems from the University of Michigan.</p>
 
-<p>I'm a Software developer from China who currently resides in a beautiful town -- Ann Arbor, Michigan. In 2019, I'll graduate with a MS in Intelligent Infrastructure Systems from the University of Michigan.</p>
-
-<p>I love skiing, traveling, exercising and cooking South Asian food. My dream life is canoeing in the lake, with my dog and a bottle of hard cider.</p>
+<p>I love skiing, surfing, traveling, and cooking South Asian food. My dream life is canoeing in the lake, with my dog and a bottle of hard cider.</p>
 
 <p>CV available upon request.</p>
-  
+</div>
+</div>
+<img id="selfie" src="images/profile.jpg" alt = "" class="w3-round" style="width:100%"/>
+
+<div class="Contact-form">
+<label>
+  <input type="checkbox" name="subscribe" id="subscribe">
+  Interested in Contact?
+</label>
+<div class="contact-container">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="N/A">N/A</option>
+      <option value="china">China</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
 </main>
-<!-- <address>
-1909 McIntyre ST · ANN ARBOR, MI 48103 · JZCHENG @UMICH.EDU<br></address><br> -->
 <footer>
-  <div class="block-content">
-    <h3 >Get in touch</h3>
-    <div class="row">
-    
-      <div class="col-md-6">
-        <div class="contact-content ">
-          <div class="contact-icon">
-            <i class="fa fa-map-marker"></i>
-          </div>
-          <div class="contact-details">
-            <h5>Address</h5>
-            <p>1909 McIntyre ST, Ann Arbor, MI 48105</p>
-          </div>
-        </div>  
-        <div class="contact-content ">
-          <div class="contact-icon">
-            <i class="fa fa-phone"></i>
-          </div>
-          <div class="contact-details">
-            <h5>Call Us</h5>
-            <p> +1 7346233898</p>
-          </div>
-        </div>  
-        <div class="contact-content ">
-          <div class="contact-icon">
-            <i class="fa fa-envelope"></i>
-          </div>
-          <div class="contact-details">
-            <h5>Enquiries</h5>
-            <p>jzcheng@umich.com</p>
-          </div>
-        </div>
-        
-      </div>
-      
-    </div>  
-    
-  </div>    
-</footer>      
+    <div class="footer">
+        <p>
+        Interested in working together?
+        </p>          
+        <p>
+          <i class="far fa-envelope fa-2x"></i> 
+           jzcheng@umich.com
+      </p>
+    </div>
+</footer>
+<a class="skip-main" href="#main">Skip to main content</a>
 
 </body>
 </html>

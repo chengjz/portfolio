@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox Example</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="controls">
+		<button type="button" data-filter="all">All</button>
+		<button type="button" data-filter=".goblue">goblue</button>
+		<button type="button" data-filter=".travel">travel</button>
+		<button type="button" data-filter=".newyork">newyork</button>
+		<button type="button" data-filter=".washington">washington</button>
+		<button type="button" data-sort="order:asc">Ascending</button>
+		<button type="button" data-sort="order:descending">Descending</button>
+		<button type="button" data-sort="random">Random</button>
+	</div>
+	<div class = "gallery container">
+		<a href="images/WechatIMG1.jpeg" data-lightbox="dailylife" class="mix goblue other" data-order="1"><img src="images/WechatIMG1.jpeg"></a>
+		<a href="images/WechatIMG2.jpeg" data-lightbox="dailylife" class="mix goblue other" data-order="2"><img src="images/WechatIMG2.jpeg"></a>
+		<a href="images/WechatIMG3.jpeg" data-lightbox="dailylife" class="mix goblue field" data-order="3"><img src="images/WechatIMG3.jpeg"></a>
+		<a href="images/WechatIMG4.jpeg" data-lightbox="dailylife" class="mix goblue field" data-order="4"><img src="images/WechatIMG4.jpeg"></a>
+		<a href="images/WechatIMG5.jpeg" data-lightbox="dailylife" class="mix goblue field" data-order="5"><img src="images/WechatIMG5.jpeg"></a>
+		<a href="images/WechatIMG6.jpeg" data-lightbox="dailylife" class="mix goblue other" data-order="6"><img src="images/WechatIMG6.jpeg"></a>
+		<a href="images/WechatIMG7.jpeg" data-lightbox="dailylife" class="mix travel newyork" data-order="7"><img src="images/WechatIMG7.jpeg"></a>
+		<a href="images/WechatIMG8.jpeg" data-lightbox="dailylife" class="mix travel newyork" data-order="8"><img src="images/WechatIMG8.jpeg"></a>
+		<a href="images/WechatIMG9.jpeg" data-lightbox="dailylife" class="mix travel washington " data-order="9"><img src="images/WechatIMG9.jpeg"></a>
+		<a href="images/WechatIMG10.jpeg" data-lightbox="dailylife" class="mix travel newyork" data-order="10"><img src="images/WechatIMG10.jpeg"></a>
+		<a href="images/WechatIMG11.jpeg" data-lightbox="dailylife" class="mix travel washington " data-order="11"><img src="images/WechatIMG11.jpeg"></a>
+		<a href="images/WechatIMG12.jpeg" data-lightbox="dailylife" class="mix travel washington " data-order="12"><img src="images/WechatIMG12.jpeg"></a>
+        <a href="images/WechatIMG13.jpeg" data-lightbox="dailylife" class="mix travel washington " data-order="12"><img src="images/WechatIMG13.jpeg"></a>
+        <a href="images/WechatIMG14.jpeg" data-lightbox="dailylife" class="mix travel chicago " data-order="12"><img src="images/WechatIMG14.jpeg"></a>
+        <a href="images/WechatIMG15.jpeg" data-lightbox="dailylife" class="mix travel washington " data-order="12"><img src="images/WechatIMG15.jpeg"></a>
+	</div>
+
+
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script>
+		var containerEl=document.querySelector(".container");
+		var mixer=mixitup(containerEl);
+	</script>
+</body>
